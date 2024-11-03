@@ -15,10 +15,10 @@ const TaskList = ({ filteredTasks }) => {
               type="checkbox"
               checked={task.completed}
               onChange={() => toggleTaskCompletion(task.id)}
-              className="mr-2"
+              className="mr-2 bg-pinkSoft"
             />
             <div>
-              <span className={task.completed ? 'line-through text-blue-500' : ''}>
+              <span className={task.completed ? 'line-through text-pinkLight' : ''}>
                 {task.title}
               </span>
               {task.description && (

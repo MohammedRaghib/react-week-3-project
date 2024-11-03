@@ -14,7 +14,7 @@ const SearchBar = ({ onSearch }) => {
             value={query}
             onChange={handleSearch}
             placeholder="Search tasks..."
-            className="w-full p-2 mb-4 border rounded bg-red-700"
+            className="w-full p-2 mb-4 border rounded bg-pinkSoft"
         />
     );
 };

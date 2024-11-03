@@ -17,22 +17,22 @@ const TaskForm = ({ task, onClose }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="p-4 bg-red-700 rounded">
+        <form onSubmit={handleSubmit} className="p-4 bg-pinkLight rounded">
             <input
                 type="text"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 placeholder="Task Title"
                 required
-                className="block w-full p-2 mb-2 border rounded"
+                className="block w-full p-2 mb-2 border rounded bg-pinkSoft"
             />
             <textarea
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 placeholder="Task Description"
-                className="block w-full p-2 mb-2 border rounded"
+                className="block w-full p-2 mb-2 border rounded bg-pinkSoft"
             />
-            <button type="submit" className="px-4 py-2 text-white bg-blue-500 rounded">
+            <button type="submit" className="px-4 py-2 text-white bg-pinkSoft rounded">
                 {task ? 'Update Task' : 'Add Task'}
             </button>
         </form>

@@ -15,12 +15,12 @@ const TodoApp = () => {
   );
 
   return (
-    <div className="max-w-lg p-6 mx-auto mt-10 bg-green-500 rounded shadow">
-      <h1 className="text-2xl font-bold text-center">To-Do App</h1>
+    <div className="max-w-lg p-6 mx-auto mt-10 bg-lavender rounded shadow">
+      <h1 className="text-2xl font-bold text-center text-pinkLight">To-Do App</h1>
       <SearchBar onSearch={setSearchQuery} />
       <button
         onClick={() => setIsAdding(!isAdding)}
-        className="w-full px-4 py-2 mb-4 text-white bg-blue-500 rounded hover:bg-blue-600"
+        className="w-full px-4 py-2 mb-4 text-white bg-pinkLight rounded hover:bg-pink-600"
       >
         {isAdding ? 'Cancel' : 'Add Task'}
       </button>
